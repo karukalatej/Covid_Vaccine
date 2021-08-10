@@ -1,6 +1,5 @@
 import datetime
 import json
-import xml
 import numpy as np
 import requests
 import pandas as pd
@@ -202,6 +201,7 @@ for k in mycursor:
         for data in resp_json:
             if  data['available_capacity'] > 0:
                 avl_centers.append(data)
+                
         
         if avl_centers:        
             sender = "vaccinebot.noreply@gmail.com"
